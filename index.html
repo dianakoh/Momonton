@@ -2,30 +2,41 @@
 <html>
 
 <head>
-    <title>Something</title>
+    <title>Momonton</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
-    <div class="js-clock">
-        <h1>00:00</h1>
+<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));">
+    <section class="center">
+        <div class="js-clock clock">
+            <h3 class="clock_text">00:00</h3>
+        </div>
+        <div class="js-name name">
+            <form class="js-form form">
+                <input class="name_input" type="text" placeholder="what is your name?" />
+            </form>
+            <span class="js-greetings greetings"></span>
+        </div>
+        <div>
+            <form class="js-toDoForm to-do">
+                <input type="text" placeholder="Write a to do" />
+            </form>
+            <ul class="js-toDoList">
+            </ul>
+        </div>
+    </section>
+    <div class="js-weather weather">
+        <span class="weather_text"></span>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="what is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList">
-    </ul>
-    <span class="js-weather"></span>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
+    <div class="js-imageInfo imageInfo">
+        <span></span>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 
 </html>
