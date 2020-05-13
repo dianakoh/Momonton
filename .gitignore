@@ -1,5 +1,3 @@
 .DS_Store
 *.log
 *.iml
-node_modules
-package-lock.json
